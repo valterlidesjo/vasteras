@@ -23,7 +23,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
   return (
     <>
       <nav>
-        <div className="header">
+        <div className="nav-mobile-header">
           <h1>{text}</h1>
           <h1>{text2}</h1>
         </div>
@@ -41,7 +41,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
         </button>
       </nav>
       {isActive && (
-        <section>
+        <section className="open-nav-container">
           {NavLinks.map((item, index) => (
             <Link key={index} to={item.link} className="link">
               {item.text}

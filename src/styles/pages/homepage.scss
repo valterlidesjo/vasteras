@@ -1,0 +1,48 @@
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+
+.homepage-header {
+  width: 100%;
+  margin-top: 101px;
+  @include m.flex(column);
+  img {
+    width: 100%;
+  }
+  .text {
+    padding: 1rem;
+    h1 {
+      font-size: v.$m;
+      font-weight: 400;
+    }
+    h3 {
+      font-size: v.$s;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+  }
+}
+.homepage-section {
+  width: 100%;
+  @include m.flex(column);
+  padding: 1rem;
+  .homepage-room-btn,
+  .homepage-stigen-btn {
+    width: 100%;
+    @include m.border(2px);
+    @include m.flex();
+    font-size: v.$m;
+    color: v.$black;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 2rem;
+    font-size: v.$s;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
