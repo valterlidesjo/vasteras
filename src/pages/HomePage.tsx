@@ -1,11 +1,12 @@
-import React from "react";
-import { RouterProvider } from "react-router-dom";
-import { router } from "../utils/Router";
+import NavMobile from "../components/NavMobile";
 
 const HomePage = () => {
   return (
     <>
-      <RouterProvider router={router} />
+      <NavMobile text="HOTELL" text2="VÄSTERÅS" />
+      <div>
+        <p>test</p>
+      </div>
     </>
   );
 };
