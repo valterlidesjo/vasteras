@@ -30,7 +30,7 @@ const NavDesktop: React.FC<NavDescktopProps> = ({ text, text2 }) => {
           ))}
         </article>
         <article className="nav-desktop-header">
-          <h1>{text}</h1>
+          <h1 className="nav-desktop-header-text">{text}</h1>
           <picture>
             <source srcSet={logoW} type="image/webp" />
             <img
@@ -39,7 +39,7 @@ const NavDesktop: React.FC<NavDescktopProps> = ({ text, text2 }) => {
               className="nav-desktop-img"
             />
           </picture>
-          <h1>{text2}</h1>
+          <h1 className="nav-desktop-header-text">{text2}</h1>
         </article>
       </nav>
     </>

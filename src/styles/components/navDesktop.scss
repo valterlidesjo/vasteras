@@ -5,10 +5,13 @@
 .nav-desktop {
   @include m.flex(column);
   width: 100%;
+  height: 160px;
   .nav-desktop-links {
     @include m.flex(row, space-between, center);
     width: 100%;
     padding: 2rem 6rem;
+    max-width: 1100px;
+
     .link {
       text-decoration: none;
       color: v.$black;
@@ -24,9 +27,10 @@
       height: 50px;
       border-radius: 100%;
     }
-    h1 {
+    .nav-desktop-header-text {
       font-family: v.$headerFont;
       font-weight: 400;
+      font-size: v.$l;
     }
   }
 }
