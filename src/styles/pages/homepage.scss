@@ -1,48 +1,107 @@
 @use "../global/mixins.scss" as m;
 @use "../global/variables.scss" as v;
+@use "../global/global.scss" as g;
 
-.homepage-header {
+.homepage-section {
   width: 100%;
   margin-top: 101px;
   @include m.flex(column);
   img {
     width: 100%;
   }
-  .text {
-    padding: 1rem;
+  .homepage-article {
+    width: 100%;
+    @include m.flex(column);
+    padding: 0 1rem;
     h1 {
       font-size: v.$m;
       font-weight: 400;
+      padding-top: 1rem;
     }
     h3 {
       font-size: v.$s;
       line-height: 1.2;
       font-weight: 400;
+      padding-bottom: 1rem;
+    }
+    .homepage-room-btn,
+    .homepage-stigen-btn {
+      width: 100%;
+      @include m.border(2px);
+      @include m.flex();
+      font-size: v.$m;
+      color: v.$black;
+      text-decoration: none;
+      padding: 0.7rem 1rem;
+      margin: 1rem 0 2rem 0;
+    }
+    p {
+      margin-bottom: 1rem;
+      font-size: v.$s;
+    }
+
+    .stigen-img {
+      width: 100%;
+      border-radius: 20px;
     }
   }
-}
-.homepage-section {
-  width: 100%;
-  @include m.flex(column);
-  padding: 1rem;
-  .homepage-room-btn,
-  .homepage-stigen-btn {
-    width: 100%;
-    @include m.border(2px);
-    @include m.flex();
-    font-size: v.$m;
-    color: v.$black;
-    text-decoration: none;
-    padding: 0.7rem 1rem;
-    margin-bottom: 2rem;
-  }
-  p {
-    margin-bottom: 2rem;
-    font-size: v.$s;
-  }
 
-  img {
-    width: 100%;
-    border-radius: 20px;
+  @include m.desk {
+    margin-top: 0;
+    .homepage-start-img {
+      height: calc(100svh - 162px);
+      object-fit: cover;
+      padding: 0 6rem;
+    }
+    .homepage-article {
+      padding: 0 6rem;
+      @include m.flex(column, center, start);
+      width: 100%;
+      h1 {
+        font-size: v.$xl;
+      }
+      .homepage-desktop-welcome {
+        @include m.flex(row, space-between, center);
+        padding-bottom: 2rem;
+
+        h3 {
+          font-size: v.$sm;
+          width: calc(50% - 1rem);
+        }
+        .homepage-room-btn {
+          width: calc(50% - 1rem);
+        }
+      }
+      .homepage-stigen-container,
+      .homepage-stigen-aw-container,
+      .homepage-stigen-btn-container {
+        @include m.flex(row, space-between, start);
+        width: 100%;
+        picture {
+          width: calc(50% - 1rem);
+          height: 230px;
+          .stigen-img {
+            height: 100%;
+            object-fit: cover;
+          }
+          .stigen-aw-img {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+          }
+        }
+        .stigen-text {
+          font-size: v.$sm;
+          width: calc(50% - 1rem);
+        }
+        .homepage-stigen-btn {
+          width: calc(50% - 1rem);
+        }
+      }
+      .homepage-stigen-aw-container,
+      .homepage-stigen-btn-container {
+        padding-bottom: 2rem;
+      }
+    }
   }
 }

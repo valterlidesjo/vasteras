@@ -1,6 +1,6 @@
 import "../styles/components/navMobile.scss";
-import logoW from "../../public/logo.webp";
-import logo from "../../public/logo.jpg";
+import logoW from "/logo.webp";
+import logo from "/logo.jpg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -22,14 +22,18 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
   const [isActive, setIsActive] = useState(false);
   return (
     <>
-      <nav>
+      <nav className="nav-mobile">
         <div className="nav-mobile-header">
           <h1>{text}</h1>
           <h1>{text2}</h1>
         </div>
         <picture>
           <source srcSet={logoW} type="image/webp" />
-          <img src={logo} alt="Logo Hotell Västerås" />
+          <img
+            src={logo}
+            alt="Hotell Västerås Logo"
+            className="nav-mobile-img"
+          />
         </picture>
         <button
           className={isActive ? "hamburger active" : "hamburger"}
