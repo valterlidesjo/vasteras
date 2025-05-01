@@ -1,0 +1,38 @@
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+@use "../global/global.scss" as g;
+
+.rooms-header {
+  width: 100%;
+  margin-top: 100px;
+  @include m.flex(column);
+  padding: 0 1rem;
+  h1 {
+    font-weight: 400;
+    font-size: v.$l;
+    margin: 0 0 1rem 0;
+  }
+  p {
+    font-size: v.$s;
+    line-height: 1.2;
+  }
+}
+
+.rooms-section {
+  width: 100%;
+  @include m.flex(column, center, start);
+  padding: 0 1rem;
+  h2 {
+    padding-top: 2rem;
+    font-weight: 400;
+    font-size: v.$m;
+  }
+  .dog-text {
+    font-size: v.$s;
+    padding: 1rem 0;
+  }
+  .discount {
+    font-size: v.$m;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,49 @@
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+
+.scroll-container {
+  @include m.horScroll;
+
+  .image-container {
+    position: relative;
+    .hor-header {
+      font-size: v.$m;
+      padding-bottom: 1rem;
+    }
+    .read-more {
+      font-size: v.$xs;
+      padding-bottom: 0.5rem;
+    }
+    &.hover-enabled {
+      &:hover .horizontal-img {
+        filter: brightness(0.6);
+      }
+
+      &:hover .overlay-text {
+        opacity: 1;
+      }
+    }
+
+    .horizontal-img {
+      object-fit: cover;
+      height: 25rem;
+      width: 12.5rem;
+      border-radius: 1rem;
+      margin-right: 7px;
+    }
+    .overlay-text {
+      text-align: center;
+      position: absolute;
+      width: 80%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: v.$white;
+      font-size: v.$s;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 10;
+      pointer-events: auto;
+    }
+  }
+}

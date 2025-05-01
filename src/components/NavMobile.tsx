@@ -23,10 +23,10 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
   return (
     <>
       <nav className="nav-mobile">
-        <div className="nav-mobile-header">
+        <Link to={"/"} className="nav-mobile-header">
           <h1>{text}</h1>
           <h1>{text2}</h1>
-        </div>
+        </Link>
         <picture>
           <source srcSet={logoW} type="image/webp" />
           <img
