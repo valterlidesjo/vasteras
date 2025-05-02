@@ -1,11 +1,20 @@
+@use "../global/mixins.scss" as m;
 * {
   margin: 0;
   padding: 0;
   font-family: "Playfair Display", serif;
   box-sizing: border-box;
 }
+html {
+  @include m.flex(column);
+  width: 100%;
+}
 
 body {
   max-width: 1100px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+  @include m.desk {
+    padding: 0 6rem;
+  }
 }
