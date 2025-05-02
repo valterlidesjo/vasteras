@@ -3,6 +3,7 @@ import HomePage from "../pages/HomePage";
 import NotFound from "../pages/NotFound";
 import MainLayout from "../layout/MainLayout";
 import Rooms from "../pages/Rooms";
+import AboutUs from "../pages/AboutUs";
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ export const router = createBrowserRouter([
       {
         path: "/vara-rum",
         element: <Rooms />,
+      },
+      {
+        path: "/om-oss",
+        element: <AboutUs />,
       },
     ],
   },
