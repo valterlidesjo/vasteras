@@ -1,0 +1,83 @@
+@use "../global/global.scss" as g;
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-mobile {
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  @include m.flex(row, space-between, center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: v.$white;
+  .nav-mobile-header {
+    h1 {
+      font-size: v.$s;
+      font-family: v.$headerFont;
+    }
+  }
+  .nav-mobile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  .hamburger {
+    width: 50px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    @include m.flex(column, space-between);
+    span {
+      height: 2px;
+      border-radius: 10px;
+      width: 100%;
+      background-color: v.$black;
+      transition: all 0.3s ease-in-out;
+    }
+    &.active {
+      span:nth-child(1) {
+        transform: rotate(45deg) translateY(10px) translateX(15px);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        transform: rotate(-45deg) translatey(-5px) translateX(10px);
+      }
+    }
+  }
+}
+.open-nav-container {
+  @include m.flex(column);
+  width: 100%;
+  height: calc(100svh - 101px);
+  position: fixed;
+  background-color: white;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+  &.visible {
+    transform: translateY(0);
+  }
+  .link {
+    margin: 1rem;
+    text-decoration: none;
+    color: v.$black;
+    font-size: v.$l;
+    font-weight: bold;
+    opacity: 1;
+    animation: fadeIn 0.7s ease forwards;
+  }
+}

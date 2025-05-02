@@ -1,0 +1,36 @@
+@use "../global/global.scss" as g;
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+
+.nav-desktop {
+  @include m.flex(column);
+  width: 100%;
+  height: 160px;
+  .nav-desktop-links {
+    @include m.flex(row, space-between, center);
+    width: 100%;
+    padding: 2rem 6rem;
+    max-width: 1100px;
+
+    .link {
+      text-decoration: none;
+      color: v.$black;
+      font-family: v.$headerFont;
+    }
+  }
+  .nav-desktop-header {
+    @include m.flex(row, space-between, center);
+    width: 50%;
+    max-width: 400px;
+    .nav-desktop-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+    }
+    .nav-desktop-header-text {
+      font-family: v.$headerFont;
+      font-weight: 400;
+      font-size: v.$l;
+    }
+  }
+}
