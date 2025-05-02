@@ -3,6 +3,7 @@ import logoW from "/logo.webp";
 import logo from "/logo.jpg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useIsNavOpen } from "../utils/useIsNavOpen";
 
 interface NavMobileProps {
   text: string;
@@ -19,7 +20,7 @@ const NavLinks = [
 ];
 
 const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
-  const [isActive, setIsActive] = useState(false);
+  const { isNavOpen, setIsNavOpen } = useIsNavOpen();
   return (
     <>
       <nav className="nav-mobile">
@@ -36,15 +37,15 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
           />
         </picture>
         <button
-          className={isActive ? "hamburger active" : "hamburger"}
-          onClick={() => setIsActive(!isActive)}
+          className={isNavOpen ? "hamburger active" : "hamburger"}
+          onClick={() => setIsNavOpen(!isNavOpen)}
         >
           <span></span>
           <span></span>
           <span></span>
         </button>
       </nav>
-      {isActive && (
+      {isNavOpen && (
         <section className="open-nav-container">
           {NavLinks.map((item, index) => (
             <Link key={index} to={item.link} className="link">

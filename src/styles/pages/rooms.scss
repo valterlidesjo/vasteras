@@ -23,7 +23,6 @@
 .rooms-section {
   width: 100%;
   @include m.flex(column, center, start);
-  padding: 0 1rem;
   h2 {
     padding-top: 2rem;
     font-weight: 400;

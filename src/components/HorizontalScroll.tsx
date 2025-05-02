@@ -59,7 +59,7 @@ const HorizontalScroll = ({
   imageWidth = "12.5rem",
   backgroundCol = "#fff",
   enableHoverEffect = true,
-  padding = "1rem",
+  padding,
 }: HorizontalScrollProps) => {
   return (
     <div
