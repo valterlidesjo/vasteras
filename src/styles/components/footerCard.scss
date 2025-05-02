@@ -25,3 +25,12 @@
         color: black;
     }
 }
+
+
+@media (min-width: 768px) {
+    .footerCard-container {
+        .footerCard-text {
+            font-size: v.$s;
+        }
+    }
+  }
