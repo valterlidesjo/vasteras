@@ -6,19 +6,10 @@ import stigenMat from "/stigenmat.jpg";
 import stigenDrinkW from "/stigendrink.webp";
 import stigenDrink from "/stigendrink.jpg";
 import "../styles/pages/homepage.scss";
-import { useEffect, useState } from "react";
+import { useIsMobile } from "../utils/useIsMobile";
 
 const HomePage = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1000);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1000);
-    };
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isMobile = useIsMobile();
 
   return (
     <>

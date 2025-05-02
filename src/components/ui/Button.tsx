@@ -4,13 +4,14 @@ import "../../styles/components/ui/button.scss";
 interface ButtonProps {
   text: string;
   onClick: () => void;
-  icon: string;
+  width: string;
+  icon?: React.ReactNode;
 }
-const Button: React.FC<ButtonProps> = ({ text, onClick, icon }) => {
+const Button: React.FC<ButtonProps> = ({ text, onClick, width, icon }) => {
   return (
-    <button onClick={onClick}>
+    <button onClick={onClick} className="button" style={{ width: width }}>
       {text}
-      {icon}
+      {icon && <span className="btn-icon">{icon}</span>}
     </button>
   );
 };
