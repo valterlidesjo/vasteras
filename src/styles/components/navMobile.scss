@@ -24,7 +24,9 @@
   z-index: 1000;
   background-color: v.$white;
   .nav-mobile-header {
+    text-decoration: none;
     h1 {
+      color: v.$black;
       font-size: v.$s;
       font-family: v.$headerFont;
     }
@@ -68,6 +70,7 @@
   background-color: white;
   transform: translateY(0);
   transition: transform 0.5s ease-in-out;
+  z-index: 900;
   &.visible {
     transform: translateY(0);
   }
