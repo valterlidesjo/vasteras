@@ -53,17 +53,13 @@
   @include m.desk {
     margin-top: 0;
     picture {
-      max-width: 1100px;
-
       .homepage-start-img {
         height: calc(100svh - 162px);
         object-fit: cover;
         object-position: 50% 30%;
-        padding: 0 6rem;
       }
     }
     .homepage-article {
-      padding: 0 6rem;
       @include m.flex(column, center, start);
       width: 100%;
       max-width: 1100px;
