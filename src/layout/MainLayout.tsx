@@ -15,15 +15,7 @@ const MainLayout = () => {
         <NavDesktop text="Hotell" text2="Västerås" />
       )}
 
-      <main
-      // style={{
-      //   display: "flex",
-      //   justifyContent: "center",
-      //   alignItems: "center",
-      //   flexDirection: "column",
-      //   width: "100%",
-      // }}
-      >
+      <main>
         <Outlet />
       </main>
       <Footer />
