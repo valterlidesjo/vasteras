@@ -3,7 +3,7 @@
 
 footer {
   @include m.flex(column, start, center);
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   gap: 2rem;
   max-width: 900px;
 
@@ -37,7 +37,6 @@ footer {
 @media (min-width: 768px) {
   footer {
     margin: 0 auto;
-    padding: 1rem 0;
 
     .footer-upper {
       .footer-header {

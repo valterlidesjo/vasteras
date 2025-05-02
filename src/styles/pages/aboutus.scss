@@ -5,7 +5,6 @@
 .aboutus-section {
     @include m.flex(column, start, center);
     margin-top: 100px;
-    padding: 1rem;
     gap: 2rem;
 
     picture {
@@ -20,7 +19,6 @@
         @include m.flex(column, start, center);
         gap: 1rem;
         height: calc(100vh - 176px);
-
 
         .upper-picture-section,
         .lower-picture-section {
@@ -64,10 +62,13 @@
             text-align: center;
             font-size: v.$m;
             font-weight: 500;
+            margin-bottom: 1rem;
         }
 
         .aboutus-text {
             font-size: v.$s;
+            text-align: start;
+            width: 100%;
         }
     }
 
@@ -83,7 +84,6 @@
         .aboutus-container {
 
             .aboutus-header {
-                margin-bottom: 1rem;
                 font-size: v.$l;
                 font-weight: 500;
             }
