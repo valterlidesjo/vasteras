@@ -24,7 +24,14 @@ const NavDesktop: React.FC<NavDescktopProps> = ({ text, text2 }) => {
       <nav className="nav-desktop">
         <article className="nav-desktop-links">
           {NavLinks.map((item, index) => (
-            <Link key={index} to={item.link} className="link">
+            <Link
+              key={index}
+              to={item.link}
+              className="link"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
               {item.text}
             </Link>
           ))}

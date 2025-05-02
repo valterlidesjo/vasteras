@@ -21,6 +21,9 @@ const NavLinks = [
 
 const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
   const { isNavOpen, setIsNavOpen } = useIsNavOpen();
+  if (isNavOpen) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   return (
     <>
       <nav className="nav-mobile">
