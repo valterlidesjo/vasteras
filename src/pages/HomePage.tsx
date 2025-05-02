@@ -5,7 +5,7 @@ import { router } from "../utils/Router";
 const HomePage = () => {
   return (
     <>
-      <RouterProvider router={router} />
+      <div>HomePage</div>
     </>
   );
 };
