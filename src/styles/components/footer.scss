@@ -1,0 +1,60 @@
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+
+footer {
+  @include m.flex(column, start, center);
+  padding: 2rem 1rem;
+  gap: 2rem;
+  max-width: 900px;
+
+  .footer-upper {
+    @include m.flex(row, start, center);
+    width: 100%;
+    .footer-header {
+      text-align: start;
+      width: 50%;
+      font-size: v.$m;
+    }
+  }
+
+  .footer-content {
+    @include m.flex(column, start, center);
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .footer-lower {
+    width: 100%;
+    border-top: 0.5px solid #6f6f6f;
+    padding: 1rem 0;
+    p {
+      font-size: v.$xs;
+      color: black;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    margin: 0 auto;
+    padding: 1rem 0;
+
+    .footer-upper {
+      .footer-header {
+        font-size: v.$l;
+      }
+    }
+
+    .footer-content {
+        
+    }
+
+    .footer-lower {
+      text-align: end;
+
+      p {
+        font-size: v.$s
+      }
+    }
+  }
+}

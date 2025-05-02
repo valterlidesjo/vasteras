@@ -1,0 +1,36 @@
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+
+.footerCard-container {
+    @include m.flex(row, start, center);
+    gap: 1rem;
+    width: 100%;
+
+    .footerCard-icon {
+        @include m.flex(row, center, center);
+        height: 30px;
+        width: 30px;
+        background-color: black;
+        border-radius: 50%;
+
+        .nav-icon {
+            color: white;
+            width: 2rem;
+        }
+    }
+
+    .footerCard-text {
+        font-size: v.$xs;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .footerCard-container {
+        .footerCard-text {
+            font-size: v.$s;
+        }
+    }
+  }

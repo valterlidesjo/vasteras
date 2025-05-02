@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import NavMobile from "../components/NavMobile";
 import NavDesktop from "../components/NavDesktop";
+import Footer from "../components/Footer";
 import { useIsMobile } from "../utils/useIsMobile";
 
 const MainLayout = () => {
@@ -25,6 +26,7 @@ const MainLayout = () => {
       >
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 };
