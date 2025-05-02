@@ -1,0 +1,15 @@
+@use "../../global/mixins.scss" as m;
+@use "../../global/variables.scss" as v;
+
+.circular-button-container {
+    @include m.flex(row, center,center);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+
+    .icon {
+        color: white;
+      
+    }
+}
