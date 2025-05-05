@@ -14,7 +14,7 @@ import stigenMat3 from "/stigenmat3.jpg";
 import Button from "../components/ui/Button";
 
 const Food = () => {
-  const isMobile = useIsMobile();
+  const isMobile = useIsMobile(600);
   return (
     <>
       {isMobile ? (
@@ -27,7 +27,13 @@ const Food = () => {
             />
             <picture className="breakfast">
               <source srcSet={frukostW} type="image/webp" />
-              <img src={frukost} alt="Frukost" className="breakfast-img" />
+              <img
+                src={frukost}
+                alt="Frukost"
+                className="breakfast-img"
+                title="Frukost Hotell Västerås"
+                loading="eager"
+              />
             </picture>
             <ExtendText
               header="Gästkök"
@@ -35,7 +41,13 @@ const Food = () => {
             />
             <picture className="kitchen">
               <source srcSet={kitchenW} type="image/webp" />
-              <img src={kitchen} alt="Gästkök" className="kitchen-img" />
+              <img
+                src={kitchen}
+                alt="Gästkök"
+                className="kitchen-img"
+                title="Gästkök Hotell Västerås"
+                loading="eager"
+              />
             </picture>
             <section className="food-stigen-container">
               <h2>Restaurang Stigen</h2>

@@ -44,6 +44,10 @@ const NavDesktop: React.FC<NavDescktopProps> = ({ text, text2 }) => {
               src={logo}
               alt="Hotell Västerås Logo"
               className="nav-desktop-img"
+              title="Hotell Västerås Logo"
+              loading="eager"
+              width={50}
+              height={50}
             />
           </picture>
           <h1 className="nav-desktop-header-text">{text2}</h1>

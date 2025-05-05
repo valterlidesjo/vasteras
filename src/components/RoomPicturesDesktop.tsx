@@ -8,16 +8,24 @@ interface RoomPictureDesktopProps {
   roomText: string;
   height: string;
   width: string;
+  alt: string;
+  htmlHeight?: number;
+  htmlWidth?: number;
+  title?: string;
   imagePosition?: string;
 }
 
 const RoomPicturesDesktop: React.FC<RoomPictureDesktopProps> = ({
   src,
   srcW,
+  alt,
   roomName,
   roomText,
   height,
   width,
+  title,
+  htmlHeight,
+  htmlWidth,
   imagePosition,
 }) => {
   return (
@@ -30,9 +38,12 @@ const RoomPicturesDesktop: React.FC<RoomPictureDesktopProps> = ({
         <img
           src={src}
           className="room-image"
-          loading="lazy"
+          loading="eager"
           decoding="async"
-          alt="fade-pictures"
+          alt={alt}
+          title={alt}
+          width={htmlWidth}
+          height={htmlHeight}
           style={{
             objectPosition: imagePosition,
           }}

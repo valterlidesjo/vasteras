@@ -2,7 +2,6 @@ import "../styles/components/navMobile.scss";
 import logoW from "/logo.webp";
 import logo from "/logo.jpg";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import { useIsNavOpen } from "../utils/useIsNavOpen";
 
 interface NavMobileProps {
@@ -28,8 +27,8 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
     <>
       <nav className="nav-mobile">
         <Link to={"/"} className="nav-mobile-header">
-          <h1>{text}</h1>
-          <h1>{text2}</h1>
+          <h2>{text}</h2>
+          <h2>{text2}</h2>
         </Link>
         <picture>
           <source srcSet={logoW} type="image/webp" />
@@ -37,6 +36,10 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
             src={logo}
             alt="Hotell Västerås Logo"
             className="nav-mobile-img"
+            title="Hotell Västerås Logo"
+            loading="eager"
+            width={50}
+            height={50}
           />
         </picture>
         <button

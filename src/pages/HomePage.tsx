@@ -20,18 +20,22 @@ const HomePage = () => {
             src={vasteras}
             alt="Bild Västerås stad vid ån"
             className="homepage-start-img"
+            title="Hotell Västerås Stad"
+            loading="eager"
+            width={908}
+            height={538}
           />
         </picture>
         <article className="homepage-article">
           <h1>Ett charmigt och prisvärt hotell - mitt i centrala Västerås</h1>
           {isMobile ? (
             <>
-              <h3>
+              <h2>
                 Välkommen till vårt hotell i hjärtat av Västerås, beläget precis
                 vid Stora Torget med stadens puls utanför dörren. Här möts du av
                 stilfullt boende, förstklassig service och närhet till stadens
                 bästa shopping, restauranger och nöjen.
-              </h3>
+              </h2>
               <Link
                 to={"/vara-rum"}
                 className="homepage-room-btn"
@@ -61,6 +65,10 @@ const HomePage = () => {
                   src={stigenMat}
                   alt="Köttbullar med potatismos från restaurang stigen"
                   className="stigen-img"
+                  title="Restaurang Stigen Köttbullar med mos"
+                  loading="lazy"
+                  width={935}
+                  height={493}
                 />
               </picture>
             </>
@@ -90,6 +98,10 @@ const HomePage = () => {
                     src={stigenMat}
                     alt="Köttbullar med potatismos från restaurang stigen"
                     className="stigen-img"
+                    title="Restaurang Stigen Köttbullar med mos"
+                    loading="lazy"
+                    width={422}
+                    height={230}
                   />
                 </picture>
                 <p className="stigen-text">
@@ -114,8 +126,12 @@ const HomePage = () => {
                   <source srcSet={stigenDrinkW} type="image/webp" />
                   <img
                     src={stigenDrink}
-                    alt="Köttbullar med potatismos från restaurang stigen"
+                    alt="AW efterätt från restaurang stigen"
                     className="stigen-aw-img"
+                    title="Restaurang Stigen efterätt"
+                    loading="lazy"
+                    width={422}
+                    height={230}
                   />
                 </picture>
               </div>

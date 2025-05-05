@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/components/horizontalScroll.scss";
 
 type HorizontalScrollProps = {
@@ -6,9 +7,12 @@ type HorizontalScrollProps = {
     src: string;
     webpSrc: string;
     alt: string;
+    title?: string;
     text?: string;
     header?: string;
     imagePosition?: string;
+    htmlHeight?: number;
+    htmlWidth?: number;
   }[];
   imageHeight?: string;
   imageWidth?: string;
@@ -46,14 +50,17 @@ const HorizontalScroll = ({
             <img
               src={image.src}
               alt={image.alt}
+              title={image.alt}
+              width={image.htmlWidth}
+              height={image.htmlHeight}
               className="horizontal-img"
               style={{
                 height: imageHeight,
                 width: imageWidth,
                 objectPosition: image.imagePosition,
               }}
-              loading="lazy"
               decoding="async"
+              loading="eager"
             />
           </picture>
           {enableHoverEffect && <p className="overlay-text">{image.text}</p>}

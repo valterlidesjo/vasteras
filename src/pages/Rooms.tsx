@@ -47,9 +47,9 @@ const Rooms = () => {
               Hundar är välkomna hos oss! Det tillkommer en tillägsavgift på
               150kr
             </p>
-            <h1 className="discount">
+            <h3 className="discount">
               Boka din vistelse hos oss och få 10% rabatt på din bokning!
-            </h1>
+            </h3>
             <BookButton width="100%" />
           </section>
         </>
@@ -57,9 +57,9 @@ const Rooms = () => {
         <>
           <div className="desktop-rooms-container">
             <article className="desktop-booking">
-              <h1 className="desktop-discount">
+              <h3 className="desktop-discount">
                 Boka din vistelse hos oss och få 10% rabatt på din bokning!
-              </h1>
+              </h3>
               <BookButton width="40%" />
             </article>
             <div className="desktop-rooms">
@@ -70,6 +70,9 @@ const Rooms = () => {
                 roomText="Våra enkelrum är ett smakfullt alternativ för den som söker en behaglig och bekväm plats att vila. Vi erbjuder en enkelsäng, ett rymligt rum med skrivbord, fåtölj samt toalett med dusch."
                 height="300px"
                 width="calc(50% - 1rem)"
+                htmlWidth={438}
+                htmlHeight={300}
+                alt="Enkelrum"
               />
               <RoomPicturesDesktop
                 src={dubbelStandard}
@@ -78,6 +81,9 @@ const Rooms = () => {
                 roomText="Våra dubbelrum standard erbjuder en bekväm dubbelsäng, skrivbord, sittmöbler och badrum med dusch - perfekt för en avkopplande vistelse för två."
                 height="300px"
                 width="calc(50% - 1rem)"
+                htmlWidth={438}
+                htmlHeight={300}
+                alt="Dubbelrum standard"
               />
             </div>
             <div className="desktop-rooms-sec">
@@ -89,6 +95,9 @@ const Rooms = () => {
                 height="300px"
                 width="100%"
                 imagePosition="50% 65%"
+                htmlWidth={908}
+                htmlHeight={300}
+                alt="Dubbelrum superior"
               />
               <p className="dog-text-desktop">
                 Hundar är välkomna hos oss! Det tillkommer en tillägsavgift på

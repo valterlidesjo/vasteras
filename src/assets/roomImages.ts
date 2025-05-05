@@ -13,6 +13,8 @@ export const roomImages = [
     text: "Våra enkelrum är ett smakfullt alternativ för den som söker en behaglig och bekväm plats att vila. Vi erbjuder en enkelsäng, ett rymligt rum med skrivbord, fåtölj samt toalett med dusch.",
     header: "Enkelrum",
     imagePosition: "80% 50%",
+    htmlWidth: 200,
+    htmlHeight: 400,
   },
   {
     id: 2,
@@ -22,6 +24,8 @@ export const roomImages = [
     text: "Våra dubbelrum standard erbjuder en bekväm dubbelsäng, skrivbord, sittmöbler och badrum med dusch - perfekt för en avkopplande vistelse för två.",
     header: "Dubbelrum",
     imagePosition: "65% 50%",
+    htmlWidth: 200,
+    htmlHeight: 400,
   },
   {
     id: 3,
@@ -30,5 +34,7 @@ export const roomImages = [
     alt: "Dubbelrum superior",
     text: "Våra dubbelrum superior har balkong, bekväm dubbelsäng, badkar och extra utrymme - för en lyxigare och mer avslappnad vistelse.",
     header: "Dubbelrum superior",
+    htmlWidth: 200,
+    htmlHeight: 400,
   },
 ];

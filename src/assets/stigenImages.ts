@@ -13,6 +13,8 @@ export const stigenImages = [
     src: stigenMat2,
     webpSrc: stigenMat2W,
     alt: "Stigen pizza",
+    htmlWidth: 200,
+    htmlHeight: 200,
   },
   {
     id: 2,
@@ -20,12 +22,16 @@ export const stigenImages = [
     webpSrc: stigenDrinkW,
     alt: "Stigen efterätt",
     imagePosition: "70% 50%",
+    htmlWidth: 200,
+    htmlHeight: 200,
   },
   {
     id: 3,
     src: stigenMat3,
     webpSrc: stigenMat3W,
     alt: "Stigen råbiff",
+    htmlWidth: 200,
+    htmlHeight: 200,
   },
   {
     id: 3,
@@ -33,5 +39,7 @@ export const stigenImages = [
     webpSrc: stigenMatW,
     alt: "Stigen köttbullar med mos",
     imagePosition: "70% 50%",
+    htmlWidth: 200,
+    htmlHeight: 200,
   },
 ];
