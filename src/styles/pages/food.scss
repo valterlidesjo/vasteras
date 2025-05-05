@@ -1,0 +1,30 @@
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+
+.food-section {
+  @include m.flex(column);
+  width: 100%;
+  margin-top: 100px;
+  h1 {
+    font-size: v.$l;
+    margin-bottom: 1rem;
+  }
+  .breakfast,
+  .kitchen {
+    width: 100%;
+    padding-top: 1rem;
+    .breakfast-img,
+    .kitchen-img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .food-stigen-container {
+    @include m.flex(column, center, start);
+    width: 100%;
+    padding-top: 2rem;
+    h2 {
+      font-size: v.$m;
+    }
+  }
+}
