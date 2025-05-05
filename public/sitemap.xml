@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://localhost:5173/</loc>
+    <lastmod>2025-04-29</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://localhost:5173/vara-rum</loc>
+    <lastmod>2025-04-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:5173/mat-dryck</loc>
+    <lastmod>2025-04-29</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost:5173/om-oss</loc>
+    <lastmod>2025-04-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://localhost:5173/kontakt</loc>
+    <lastmod>2025-04-29</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>

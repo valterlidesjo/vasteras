@@ -7,8 +7,10 @@
   @include m.flex(column);
   picture {
     width: 100%;
+    height: auto;
     img {
       width: 100%;
+      height: auto;
     }
   }
   .homepage-article {
@@ -46,6 +48,7 @@
     .stigen-img {
       width: 100%;
       border-radius: 20px;
+      height: auto;
     }
   }
 

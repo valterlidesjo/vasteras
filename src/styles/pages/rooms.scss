@@ -35,6 +35,7 @@
   .discount {
     font-size: v.$m;
     font-weight: 600;
+    padding-bottom: 1rem;
   }
 }
 @include m.tablet {

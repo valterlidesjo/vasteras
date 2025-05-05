@@ -26,7 +26,13 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
   return (
     <>
       <nav className="nav-mobile">
-        <Link to={"/"} className="nav-mobile-header">
+        <Link
+          to={"/"}
+          className="nav-mobile-header"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
           <h2>{text}</h2>
           <h2>{text2}</h2>
         </Link>
@@ -45,6 +51,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
         <button
           className={isNavOpen ? "hamburger active" : "hamburger"}
           onClick={() => setIsNavOpen(!isNavOpen)}
+          aria-label="navigation hamburger menu"
         >
           <span></span>
           <span></span>

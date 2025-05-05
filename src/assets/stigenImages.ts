@@ -34,7 +34,7 @@ export const stigenImages = [
     htmlHeight: 200,
   },
   {
-    id: 3,
+    id: 4,
     src: stigenMat,
     webpSrc: stigenMatW,
     alt: "Stigen köttbullar med mos",

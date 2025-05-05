@@ -3,6 +3,7 @@ import NavMobile from "../components/NavMobile";
 import NavDesktop from "../components/NavDesktop";
 import Footer from "../components/Footer";
 import { useIsMobile } from "../utils/useIsMobile";
+import BookSpinn from "../components/BookSpinn";
 
 const MainLayout = () => {
   const isMobile = useIsMobile();
@@ -18,6 +19,7 @@ const MainLayout = () => {
       <main>
         <Outlet />
       </main>
+      <BookSpinn />
       <Footer />
     </>
   );
