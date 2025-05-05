@@ -28,3 +28,50 @@
     }
   }
 }
+@include m.desk {
+  .food-section-desktop {
+    @include m.flex(column);
+    h1 {
+      font-size: v.$xl;
+    }
+    .food-info-desktop {
+      @include m.flex();
+      gap: 6rem;
+      h2 {
+        font-size: v.$l;
+        padding-bottom: 1rem;
+      }
+      p {
+        font-size: v.$s;
+        line-height: 1.2;
+      }
+    }
+    .restaurang-stigen-desktop {
+      @include m.flex(column);
+      h1 {
+        font-size: v.$l;
+        padding: 2rem 0 1rem 0;
+      }
+      .stigen-images-desktop {
+        width: 100%;
+        @include m.flex();
+        gap: 1rem;
+        .stigen-pizza,
+        .stigen-steak {
+          width: calc(50% - 0.5rem);
+          .stigen-img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .stigen-info-desktop {
+      width: 100%;
+      padding: 2rem 6rem;
+      @include m.flex(column);
+      h2 {
+        padding: 2rem 0;
+      }
+    }
+  }
+}
