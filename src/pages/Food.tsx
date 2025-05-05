@@ -47,7 +47,7 @@ const Food = () => {
             enableHoverEffect={false}
             readMore={false}
           />
-          <p>
+          <p className="food-stigen-text">
             Vi är stolta över vårt samarbete med restaurangen Stigen, belägen
             precis runt hörnet från hotellet. Med rötterna i Norrlands natur
             erbjuder Stigen smakupplevelser inspirerade av bergen, skogarna och
@@ -55,6 +55,13 @@ const Food = () => {
             där ni kan njuta av genuina nordiska smaker och en atmosfär präglad
             av kvalitet och omtanke.
           </p>
+          <Button
+            text="Stigens hemsida"
+            onClick={() => {
+              window.open("https://stigenavknut.se/stigen-i-vasteras-2/");
+            }}
+            width="100%"
+          />
         </>
       ) : (
         <>

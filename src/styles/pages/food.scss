@@ -28,6 +28,9 @@
     }
   }
 }
+.food-stigen-text {
+  padding: 2rem 0;
+}
 @include m.desk {
   .food-section-desktop {
     @include m.flex(column);

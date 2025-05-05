@@ -16,7 +16,7 @@ const FooterCard = ({ value, beforeLink, link, icon }: FooterCard) => {
           className: "nav-icon",
         } as React.Attributes)}
       </div>
-      <a className="footerCard-text" href={beforeLink + link}>
+      <a className="footerCard-text" href={beforeLink + link} target="_blank">
         {value}
       </a>
     </div>

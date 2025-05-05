@@ -32,7 +32,13 @@ const HomePage = () => {
                 stilfullt boende, förstklassig service och närhet till stadens
                 bästa shopping, restauranger och nöjen.
               </h3>
-              <Link to={"/vara-rum"} className="homepage-room-btn">
+              <Link
+                to={"/vara-rum"}
+                className="homepage-room-btn"
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
                 Upptäck våra rum
               </Link>
               <p>
@@ -67,7 +73,13 @@ const HomePage = () => {
                   möts du av stilfullt boende, förstklassig service och närhet
                   till stadens bästa shopping, restauranger och nöjen.
                 </h3>
-                <Link to={"/vara-rum"} className="homepage-room-btn">
+                <Link
+                  to={"/vara-rum"}
+                  className="homepage-room-btn"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
                   Upptäck våra rum
                 </Link>
               </div>
@@ -114,12 +126,15 @@ const HomePage = () => {
                 >
                   Se Meny & Boka Bord
                 </a>
-                <a
-                  href="https://stigenavknut.se/"
+                <Link
+                  to={"/mat-dryck"}
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                   className="homepage-stigen-btn"
                 >
                   Läs mer om vår Mat & Dryck
-                </a>
+                </Link>
               </div>
             </>
           )}
