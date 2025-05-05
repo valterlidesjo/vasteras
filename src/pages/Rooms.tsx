@@ -1,5 +1,5 @@
 import BookButton from "../components/BookButton";
-import HorizontalScroll, { roomImages } from "../components/HorizontalScroll";
+import HorizontalScroll from "../components/HorizontalScroll";
 import RoomPicturesDesktop from "../components/RoomPicturesDesktop";
 import "../styles/pages/rooms.scss";
 import { useIsMobile } from "../utils/useIsMobile";
@@ -9,6 +9,7 @@ import dubbelStandardW from "/dubbelrumstandard.webp";
 import dubbelStandard from "/dubbelrumstandard.jpg";
 import dubbelSuperiorW from "/dubbelrumsuperior2.webp";
 import dubbelSuperior from "/dubbelrumsuperior2.jpg";
+import { roomImages } from "../assets/roomImages";
 
 const Rooms = () => {
   const isMobile = useIsMobile(600);

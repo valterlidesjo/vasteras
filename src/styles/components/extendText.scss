@@ -1,0 +1,29 @@
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+.text-extender {
+  @include m.flex(column, center, start);
+  width: 100%;
+  .extender-header {
+    font-size: v.$m;
+  }
+  .half-text {
+    font-size: v.$s;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .full-text {
+    font-size: v.$s;
+    display: block;
+    overflow: visible;
+  }
+  .read-more,
+  .read-less {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+  }
+}
