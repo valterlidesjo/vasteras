@@ -1,4 +1,3 @@
-import React from "react";
 import { FiPhone } from "react-icons/fi";
 import FooterCard from "./FooterCard";
 import { IoLocationOutline } from "react-icons/io5";

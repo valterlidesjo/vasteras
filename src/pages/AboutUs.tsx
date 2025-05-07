@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../components/ui/Button";
 import CircularButton from "../components/ui/CircularButton";
 import { useIsMobile } from "../utils/useIsMobile";

@@ -1,22 +1,23 @@
 import React from "react";
 import "../styles/components/footerCard.scss";
 
-interface FooterCard {
+interface FooterCardProps {
   value: string;
   beforeLink: string;
   link?: string;
-  icon: React.ReactElement<any>;
+  icon: React.ReactElement;
 }
 
-const FooterCard = ({ value, beforeLink, link, icon }: FooterCard) => {
+const FooterCard = ({ value, beforeLink, link, icon }: FooterCardProps) => {
   return (
     <div className="footerCard-container">
-      <div className="footerCard-icon">
-        {React.cloneElement(icon, {
-          className: "nav-icon",
-        } as React.Attributes)}
-      </div>
-      <a className="footerCard-text" href={beforeLink + link} target="_blank">
+      <div className="footerCard-icon">{icon}</div>
+      <a
+        className="footerCard-text"
+        href={beforeLink + link}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {value}
       </a>
     </div>
