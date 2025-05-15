@@ -11,7 +11,6 @@ interface RoomPictureDesktopProps {
   alt: string;
   htmlHeight?: number;
   htmlWidth?: number;
-  title?: string;
   imagePosition?: string;
 }
 
@@ -23,7 +22,6 @@ const RoomPicturesDesktop: React.FC<RoomPictureDesktopProps> = ({
   roomText,
   height,
   width,
-  title,
   htmlHeight,
   htmlWidth,
   imagePosition,
