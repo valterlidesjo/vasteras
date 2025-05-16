@@ -3,7 +3,8 @@ import CircularButton from "../components/ui/CircularButton";
 import { useIsMobile } from "../utils/useIsMobile";
 import "../styles/pages/aboutus.scss";
 import porten from "/porten2.png";
-import frukost from "/frukost-om-oss.jpg";
+import frukost from "/frukost1.png";
+import frukostW from "/frukost1.webp";
 import dubbelrum from "/dubbelrumsuperior2.webp";
 
 const AboutUs = () => {
@@ -28,7 +29,7 @@ const AboutUs = () => {
                 />
               </picture>
               <picture>
-                <source srcSet={frukost} type="image/webp" />
+                <source srcSet={frukostW} type="image/webp" />
                 <img
                   src={frukost}
                   alt="Köttbullar med potatismos från restaurang stigen"

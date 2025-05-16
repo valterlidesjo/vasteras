@@ -36,18 +36,27 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
           <h2>{text}</h2>
           <h2>{text2}</h2>
         </Link>
-        <picture>
-          <source srcSet={logoW} type="image/webp" />
-          <img
-            src={logo}
-            alt="Hotell Västerås Logo"
-            className="nav-mobile-img"
-            title="Hotell Västerås Logo"
-            loading="eager"
-            width={50}
-            height={50}
-          />
-        </picture>
+        <Link
+          to={"/"}
+          className="nav-mobile-logo"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <picture>
+            <source srcSet={logoW} type="image/webp" />
+            <img
+              src={logo}
+              alt="Hotell Västerås Logo"
+              className="nav-mobile-img"
+              title="Hotell Västerås Logo"
+              loading="eager"
+              width={50}
+              height={50}
+            />
+          </picture>
+        </Link>
+
         <button
           className={isNavOpen ? "hamburger active" : "hamburger"}
           onClick={() => setIsNavOpen(!isNavOpen)}
