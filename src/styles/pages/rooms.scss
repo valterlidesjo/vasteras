@@ -49,7 +49,7 @@
       .desktop-discount {
         font-size: v.$m;
         font-weight: 600;
-        width: calc(70% - 2rem);
+        width: calc(60% - 2rem);
       }
     }
     .desktop-rooms {
@@ -80,10 +80,11 @@
       width: 100%;
       @include m.flex(row, space-between, center);
       gap: 2rem;
+      flex-wrap: wrap;
       .desktop-discount {
         font-size: v.$m;
         font-weight: 600;
-        width: calc(70% - 2rem);
+        width: calc(60% - 2rem);
       }
     }
     .desktop-rooms {

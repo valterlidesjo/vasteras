@@ -45,7 +45,7 @@ const Rooms = () => {
           <section className="rooms-section">
             <p className="dog-text">
               Hundar är välkomna hos oss! Det tillkommer en tillägsavgift på
-              150kr
+              250kr
             </p>
             <h3 className="discount">
               Boka din vistelse hos oss och få 10% rabatt på din bokning!
@@ -101,7 +101,7 @@ const Rooms = () => {
               />
               <p className="dog-text-desktop">
                 Hundar är välkomna hos oss! Det tillkommer en tillägsavgift på
-                150kr.
+                250kr.
               </p>
             </div>
           </div>
