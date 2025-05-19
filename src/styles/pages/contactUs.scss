@@ -1,0 +1,42 @@
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+@use "../global/global.scss" as g;
+
+.contact-us-section {
+    @include m.flex(column, start, center);
+    width: 100%;
+    gap: 2rem;
+    margin-top: 100px;
+
+    .contact-us-upper {
+        @include m.flex(column, start, start);
+        width: 100%;
+        gap: 2rem;
+
+        .contact-us-header {
+            text-align: center;
+            font-size: v.$l;
+            width: 100%;
+        }
+
+        div {
+            width: 100%;
+        }
+    }
+
+    .contact-us-lower {
+        @include m.flex(column, start, start);
+        gap: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-us-section {
+        .contact-us-lower {
+            @include m.flex(column, center, center);
+            text-align: center;
+            width: 60%;
+            font-size: v.$sm;
+        }
+    }
+}
