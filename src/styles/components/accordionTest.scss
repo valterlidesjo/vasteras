@@ -1,0 +1,41 @@
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+
+.AccordionItem {
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid #292D32;
+  width: 100%;
+}
+
+.AccordionHeader {
+  @include m.flex(row, space-between, center);
+  padding: 1rem 0;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+
+  .icon {
+    transition: transform 0.2s ease-in-out;
+
+    &.active {
+        transform: rotate(90deg);
+        transition: transform 0.2s ease-in-out;
+
+    }
+  }
+
+}
+
+.AccordionPanel {
+  padding: 0 0 1rem 0;
+   cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  .AccordionHeader {
+    p {
+      font-size: v.$sm;
+    }
+  }
+}

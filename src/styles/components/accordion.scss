@@ -1,0 +1,28 @@
+@use "../global/mixins.scss" as m;
+@use "../global/variables.scss" as v;
+
+
+.accordion-container {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+
+    .accordion-header {
+        @include m.flex(row, space-between, center);
+        background-color: aquamarine;
+        padding: 1rem;
+
+        .icon {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .icon-active {
+            transform: rotate(90deg);
+            transition: transform 0.2s ease-in-out;
+        }
+    }
+
+    .accordion-content {
+        padding: 1rem;
+    }
+}
+

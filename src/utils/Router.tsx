@@ -5,6 +5,7 @@ import MainLayout from "../layout/MainLayout";
 import Rooms from "../pages/Rooms";
 import Food from "../pages/Food";
 import AboutUs from "../pages/AboutUs";
+import ContactUs from "../pages/ContactUs";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: "/mat-dryck",
         element: <Food />,
+      },
+      {
+        path: "/kontakt",
+        element: <ContactUs />,
       },
     ],
   },
