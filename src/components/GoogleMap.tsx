@@ -1,4 +1,3 @@
-import React from "react";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 
 const apiKey = import.meta.env.VITE_GOOGLE_API;

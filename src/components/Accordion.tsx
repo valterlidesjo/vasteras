@@ -5,11 +5,10 @@ import "../styles/components/accordion.scss";
 
 interface AccordionProps {
   header: string;
-  text?: string;
   children: React.ReactNode;
 }
 
-const Accordion = ({ header, text, children }: AccordionProps) => {
+const Accordion = ({ header, children }: AccordionProps) => {
   const [accordion, setAccordion] = useState(false);
 
   const handleOpen = () => {

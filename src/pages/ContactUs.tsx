@@ -1,8 +1,5 @@
-import React from "react";
 import CircularButton from "../components/ui/CircularButton";
-import Accordion from "../components/Accordion";
 import AccordionTest from "../components/AccordionTest";
-import porten from "/googleMaps.png";
 import "../styles/pages/contactUs.scss";
 import GoogleMap from "../components/GoogleMap";
 
