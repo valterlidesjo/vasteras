@@ -35,6 +35,16 @@ const Footer = () => {
           <p>
             ©{new Date().getFullYear()} Hotell Västerås. All rights reserved.
           </p>
+          <p>
+            Website made by{" "}
+            <a target="_blank" href="https://valterlidesjo.se/">
+              Valter
+            </a>{" "}
+            &{" "}
+            <a target="_blank" href="https://malterozenbeek.se/">
+              Malte
+            </a>
+          </p>
         </div>
       </footer>
     </>
