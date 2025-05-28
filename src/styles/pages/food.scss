@@ -37,24 +37,24 @@
     margin-top: 100px;
 
     h1 {
-      font-size: v.$xl;
+      font-size: v.$l;
+      margin: 0 0 2rem 0;
     }
     .food-info-desktop {
       @include m.flex();
       gap: 6rem;
       h2 {
-        font-size: v.$l;
-        padding-bottom: 1rem;
+        font-size: v.$m;
+        padding-bottom: 2rem;
       }
       p {
         font-size: v.$s;
-        line-height: 1.2;
       }
     }
     .restaurang-stigen-desktop {
       @include m.flex(column);
       h1 {
-        font-size: v.$l;
+        font-size: v.$m;
         padding: 2rem 0 1rem 0;
       }
       .stigen-images-desktop {
@@ -83,25 +83,27 @@
 @include m.desk {
   .food-section-desktop {
     @include m.flex(column);
+        margin-top: 100px;
+
     h1 {
-      font-size: v.$xl;
+      font-size: v.$l;
+      margin: 0 0 2rem 0;
     }
     .food-info-desktop {
-      @include m.flex();
+      @include m.flex(row, start, start);
       gap: 6rem;
       h2 {
-        font-size: v.$l;
-        padding-bottom: 1rem;
+        font-size: v.$m;
+        padding-bottom: 2rem;
       }
       p {
         font-size: v.$s;
-        line-height: 1.2;
       }
     }
     .restaurang-stigen-desktop {
       @include m.flex(column);
       h1 {
-        font-size: v.$l;
+        font-size: v.$m;
         padding: 2rem 0 1rem 0;
       }
       .stigen-images-desktop {

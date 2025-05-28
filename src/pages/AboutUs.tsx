@@ -10,6 +10,7 @@ import frukostW from "/frukost1.webp";
 
 import dubbelSuperiorW from "/dubbelrumsuperior2.webp";
 import dubbelSuperior from "/dubbelrumsuperior2.jpg";
+import BookButton from "../components/BookButton";
 
 const AboutUs = () => {
   const isMobile = useIsMobile();
@@ -70,19 +71,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        {isMobile ? (
-          <Button
-            text="Sök Bokning"
-            width="100%"
-            onClick={() => console.log("balle")}
-          />
-        ) : (
-          <Button
-            text="Sök Bokning"
-            width="30%"
-            onClick={() => console.log("balle")}
-          />
-        )}
+        {isMobile ? <BookButton width="100%" /> : <BookButton width="30%" />}
 
         <div className="aboutus-container">
           <p className="aboutus-header">

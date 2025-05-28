@@ -5,6 +5,7 @@
   font-family: "Playfair Display", serif;
   box-sizing: border-box;
   font-weight: 400;
+  
 }
 html {
   @include m.flex(column);
@@ -18,4 +19,8 @@ body {
   @include m.desk {
     padding: 0 6rem;
   }
+}
+
+p {
+line-height: 1.8;
 }

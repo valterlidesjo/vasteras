@@ -18,7 +18,7 @@ const BookButton: React.FC<BookButtonProps> = ({ width }) => {
       const script = document.createElement("script");
       script.src = "https://secured.sirvoy.com/widget/sirvoy.js";
       script.async = true;
-      script.setAttribute("data-form-id", sirvoy); // korrekt ID här
+      script.setAttribute("data-form-id", sirvoy);
       document.getElementById("sirvoy-container")?.appendChild(script);
     }
   }, [isBookingOpen]);
