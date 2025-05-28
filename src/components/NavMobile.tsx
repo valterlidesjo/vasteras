@@ -12,10 +12,10 @@ interface NavMobileProps {
 const NavLinks = [
   { text: "Hem", link: "/" },
   { text: "Våra rum", link: "/vara-rum" },
+  { text: "Boka rum", link: "/vara-rum" },
   { text: "Mat & Dryck", link: "/mat-dryck" },
   { text: "Om oss", link: "/om-oss" },
   { text: "Kontakt", link: "/kontakt" },
-  { text: "Boka rum", link: "/vara-rum" },
 ];
 
 const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
@@ -70,7 +70,12 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
       {isNavOpen && (
         <section className="open-nav-container">
           {NavLinks.map((item, index) => (
-            <Link key={index} to={item.link} className="link">
+            <Link
+              key={index}
+              to={item.link}
+              className="link"
+              onClick={() => setIsNavOpen(!isNavOpen)}
+            >
               {item.text}
             </Link>
           ))}

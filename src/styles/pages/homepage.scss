@@ -51,6 +51,15 @@
       height: auto;
     }
   }
+  // @include m.tablet {
+  //   picture {
+  //     @include m.flex(column);
+  //     .homepage-start-img {
+  //       max-height: 400px;
+  //       width: auto;
+  //     }
+  //   }
+  // }
 
   @include m.desk {
     margin-top: 0;
