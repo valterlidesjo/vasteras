@@ -25,7 +25,7 @@ const BookButton: React.FC<BookButtonProps> = ({ width }) => {
 
   return (
     <>
-      <Button text="Sök bokning" onClick={handleClick} width={width} />
+      <Button text="Sök datum" onClick={handleClick} width={width} />
       {isBookingOpen && <div id="sirvoy-container" style={{ width: "100%" }} />}
     </>
   );

@@ -57,8 +57,7 @@ const Rooms = () => {
           <HorizontalScroll images={roomImages} />
           <section className="rooms-section">
             <p className="dog-text" id="target-scroll">
-              Hundar är välkomna hos oss! Det tillkommer en tillägsavgift på
-              250kr
+              Hundar är välkomna hos oss! Det tillkommer en avgift på 250kr
             </p>
             <h3 className="discount">
               Boka din vistelse hos oss och få 10% rabatt på din bokning!
@@ -113,8 +112,7 @@ const Rooms = () => {
                 alt="Dubbelrum superior"
               />
               <p className="dog-text-desktop">
-                Hundar är välkomna hos oss! Det tillkommer en tillägsavgift på
-                250kr.
+                Hundar är välkomna hos oss! Det tillkommer en avgift på 250kr.
               </p>
             </div>
           </div>
