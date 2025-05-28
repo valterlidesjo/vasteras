@@ -9,6 +9,7 @@ const BookSpinn = () => {
       <Link
         to={"/vara-rum"}
         className="book-spinn-container"
+        state={{ scrollToId: "target-scroll" }}
         onClick={() => {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}

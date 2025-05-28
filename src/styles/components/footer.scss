@@ -54,10 +54,6 @@ footer {
         font-size: v.$l;
       }
     }
-
-    .footer-content {
-    }
-
     .footer-lower {
       @include m.flex(row, space-between, center);
 

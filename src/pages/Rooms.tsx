@@ -10,9 +10,22 @@ import dubbelStandard from "/dubbelrumstandard.jpg";
 import dubbelSuperiorW from "/dubbelrumsuperior2.webp";
 import dubbelSuperior from "/dubbelrumsuperior2.jpg";
 import { roomImages } from "../assets/roomImages";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 const Rooms = () => {
   const isMobile = useIsMobile(600);
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToId = location.state?.scrollToId;
+    if (scrollToId) {
+      const target = document.getElementById(scrollToId);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
   return (
     <>
       <header className="rooms-header">
@@ -43,7 +56,7 @@ const Rooms = () => {
           </section>
           <HorizontalScroll images={roomImages} />
           <section className="rooms-section">
-            <p className="dog-text">
+            <p className="dog-text" id="target-scroll">
               Hundar är välkomna hos oss! Det tillkommer en tillägsavgift på
               250kr
             </p>
