@@ -3,9 +3,13 @@ import CircularButton from "../components/ui/CircularButton";
 import { useIsMobile } from "../utils/useIsMobile";
 import "../styles/pages/aboutus.scss";
 import porten from "/porten2.png";
+import portenW from "/portenW.webp";
+
 import frukost from "/frukost1.png";
 import frukostW from "/frukost1.webp";
-import dubbelrum from "/dubbelrumsuperior2.webp";
+
+import dubbelSuperiorW from "/dubbelrumsuperior2.webp";
+import dubbelSuperior from "/dubbelrumsuperior2.jpg";
 
 const AboutUs = () => {
   const isMobile = useIsMobile();
@@ -15,33 +19,36 @@ const AboutUs = () => {
       <section className="aboutus-section">
         {isMobile ? (
           <picture>
-            <source srcSet={porten} type="image/webp" />
-            <img src={porten} alt="Entre till hotell västerås" />
+            <source srcSet={portenW} type="image/webp" />
+            <img
+              src={porten}
+              alt="Entre till hotell västerås"
+              loading="eager"
+            />
           </picture>
         ) : (
           <div className="picture-section">
             <div className="upper-picture-section">
               <picture>
-                <source srcSet={porten} type="image/webp" />
+                <source srcSet={portenW} type="image/webp" />
                 <img
                   src={porten}
-                  alt="Köttbullar med potatismos från restaurang stigen"
+                  alt="Entre till hotell västerås"
+                  loading="eager"
                 />
               </picture>
               <picture>
                 <source srcSet={frukostW} type="image/webp" />
-                <img
-                  src={frukost}
-                  alt="Köttbullar med potatismos från restaurang stigen"
-                />
+                <img src={frukost} alt="Bild på frukostbuffe" loading="eager" />
               </picture>
             </div>
             <div className="lower-picture-section">
               <picture>
-                <source srcSet={dubbelrum} type="image/webp" />
+                <source srcSet={dubbelSuperiorW} type="image/webp" />
                 <img
-                  src={dubbelrum}
-                  alt="Köttbullar med potatismos från restaurang stigen"
+                  src={dubbelSuperior}
+                  alt="Dubbelrum standard"
+                  loading="eager"
                 />
               </picture>
             </div>

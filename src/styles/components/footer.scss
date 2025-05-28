@@ -24,12 +24,23 @@ footer {
   }
 
   .footer-lower {
+    @include m.flex(column, start, start);
+    gap: 1rem;
     width: 100%;
     border-top: 0.5px solid #6f6f6f;
     padding: 1rem 0;
     p {
+      font-family: "Geist";
       font-size: v.$xs;
       color: black;
+      font-weight: 300;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-family: "Geist";
+      font-weight: 600;
     }
   }
 }
@@ -44,8 +55,14 @@ footer {
       }
     }
 
+<<<<<<< HEAD
+=======
+    .footer-content {
+    }
+
+>>>>>>> dev
     .footer-lower {
-      text-align: end;
+      @include m.flex(row, space-between, center);
 
       p {
         font-size: v.$s;
