@@ -63,7 +63,6 @@
       text-align: center;
       font-size: v.$m;
       font-weight: 500;
-      margin-bottom: 1rem;
     }
 
     .aboutus-text {
@@ -77,6 +76,11 @@
 @media (min-width: 768px) {
   .aboutus-section {
     margin: 0;
+    margin-top: 100px;
+
+    .picture-section {
+      height: calc(100vh - 276px);
+    }
 
     .aboutus-container {
       .aboutus-header {

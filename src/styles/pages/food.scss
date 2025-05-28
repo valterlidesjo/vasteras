@@ -83,6 +83,8 @@
 @include m.desk {
   .food-section-desktop {
     @include m.flex(column);
+        margin-top: 100px;
+
     h1 {
       font-size: v.$l;
       margin: 0 0 2rem 0;

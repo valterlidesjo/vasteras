@@ -75,9 +75,16 @@
 }
 
 @include m.desk {
+
+  .rooms-header {
+        margin-top: 100px;
+
+  }
+  
   .desktop-rooms-container {
     @include m.flex(column);
     width: 100%;
+
     .desktop-booking {
       width: 100%;
       @include m.flex(row, space-between, center);
