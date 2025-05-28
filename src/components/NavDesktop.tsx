@@ -12,10 +12,10 @@ interface NavDescktopProps {
 const NavLinks = [
   { text: "Hem", link: "/" },
   { text: "Våra rum", link: "/vara-rum" },
+  { text: "Boka rum", link: "/vara-rum" },
   { text: "Mat & Dryck", link: "/mat-dryck" },
   { text: "Om oss", link: "/om-oss" },
   { text: "Kontakt", link: "/kontakt" },
-  { text: "Boka rum", link: "/vara-rum" },
 ];
 
 const NavDesktop: React.FC<NavDescktopProps> = ({ text, text2 }) => {

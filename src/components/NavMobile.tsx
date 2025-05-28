@@ -12,7 +12,11 @@ interface NavMobileProps {
 const NavLinks = [
   { text: "Hem", link: "/" },
   { text: "Våra rum", link: "/vara-rum" },
-  { text: "Boka rum", link: "/vara-rum" },
+  {
+    text: "Boka rum",
+    link: "/vara-rum",
+    state: { scrollToId: "target-scroll" },
+  },
   { text: "Mat & Dryck", link: "/mat-dryck" },
   { text: "Om oss", link: "/om-oss" },
   { text: "Kontakt", link: "/kontakt" },
@@ -74,6 +78,7 @@ const NavMobile: React.FC<NavMobileProps> = ({ text, text2 }) => {
               key={index}
               to={item.link}
               className="link"
+              state={item.state}
               onClick={() => setIsNavOpen(!isNavOpen)}
             >
               {item.text}
