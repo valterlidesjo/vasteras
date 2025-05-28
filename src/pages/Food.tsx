@@ -85,15 +85,14 @@ const Food = () => {
                 <p>
                   Varje morgon kan våra gäster njuta av en noggrant utvald
                   frukostbuffé, där kvalitet och fräschör står i fokus. Här
-                  väntar en färgstark variation av färska frukter och grönsaker
-                  som paprika, gurka, vindruvor och äpplen, tillsammans med
-                  yoghurt och filmjölk, ackompanjerade av ett brett utbud av
-                  müsli, cornflakes och torkade frukter. Välj bland nybakat bröd
-                  - hårt eller mjukt, ljust eller fiberrikt - och komplettera
-                  med en mängd olika pålägg. Självklart erbjuder vi också
-                  rykande hett kaffe, aromatiska teer, färsk juice, mjölk och
-                  uppfriskande ingefärashots. En frukostupplevelse som ger en
-                  smakfull start på dagen!
+                  väntar en färgstark variation av färska frukter och grönsaker,
+                  tillsammans med yoghurt och filmjölk, ackompanjerade av ett
+                  brett utbud av müsli, cornflakes och torkade frukter. Välj
+                  bland nybakat bröd - hårt eller mjukt, ljust eller fiberrikt -
+                  och komplettera med en mängd olika pålägg. Självklart erbjuder
+                  vi också rykande hett kaffe, aromatiska teer, färsk juice,
+                  mjölk och uppfriskande ingefärashots. En frukostupplevelse som
+                  ger en härlig start på dagen!
                 </p>
               </div>
               <div className="kitchen-desktop">

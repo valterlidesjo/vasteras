@@ -65,7 +65,7 @@ const AboutUs = () => {
           <p className="aboutus-text">
             Njut av närheten till stadens sevärdheter och upplev en varm,
             välkomnande atmosfär. Med moderna bekvämligheter och en genuin
-            känsla av hemtrevnad är Hotel Västerås mer än bara ett hotell – det
+            känsla av hemtrevnad är Hotell Västerås mer än bara ett hotell – det
             är din oas i staden.
           </p>
         </div>
@@ -89,7 +89,8 @@ const AboutUs = () => {
             vistelse i Västerås enkel och bekväm – tillsammans.
           </p>
           <p className="aboutus-text">
-            För bokningar med större sällskap kontakta oss genom nedan!{" "}
+            För bokningar med större sällskap kontakta oss via telefon eller
+            mail!{" "}
           </p>
         </div>
         <CircularButton />
