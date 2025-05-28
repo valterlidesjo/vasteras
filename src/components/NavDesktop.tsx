@@ -1,7 +1,7 @@
 import "../styles/components/navDesktop.scss";
 import logoW from "/logo.webp";
 import logo from "/logo.jpg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
 
 interface NavDescktopProps {
@@ -24,16 +24,18 @@ const NavDesktop: React.FC<NavDescktopProps> = ({ text, text2 }) => {
       <nav className="nav-desktop">
         <article className="nav-desktop-links">
           {NavLinks.map((item, index) => (
-            <Link
+            <NavLink
               key={index}
               to={item.link}
-              className="link"
+              className={({ isActive }) =>
+                isActive && item.text != "Boka rum" ? "active-link" : "link"
+              }
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
               {item.text}
-            </Link>
+            </NavLink>
           ))}
         </article>
         <article className="nav-desktop-header">

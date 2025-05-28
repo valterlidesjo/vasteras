@@ -48,7 +48,6 @@
       }
       p {
         font-size: v.$s;
-        line-height: 1.2;
       }
     }
     .restaurang-stigen-desktop {
@@ -87,7 +86,7 @@
       font-size: v.$xl;
     }
     .food-info-desktop {
-      @include m.flex();
+      @include m.flex(row, start, start);
       gap: 6rem;
       h2 {
         font-size: v.$l;
@@ -95,7 +94,6 @@
       }
       p {
         font-size: v.$s;
-        line-height: 1.2;
       }
     }
     .restaurang-stigen-desktop {
