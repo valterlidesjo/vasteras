@@ -30,12 +30,12 @@ const HomePage = () => {
           <h1>Ett charmigt och prisvärt hotell - mitt i centrala Västerås</h1>
           {isMobile ? (
             <>
-              <h2>
+              <p>
                 Välkommen till vårt hotell i hjärtat av Västerås, beläget precis
                 vid Stora Torget med stadens puls utanför dörren. Här möts du av
                 stilfullt boende, förstklassig service och närhet till stadens
                 bästa shopping, restauranger och nöjen.
-              </h2>
+              </p>
               <Link
                 to={"/vara-rum"}
                 className="homepage-room-btn"
