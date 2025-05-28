@@ -35,7 +35,7 @@ const Rooms = () => {
           omsorgsfullt inredda rum. Här väntar sköna sängar från Sängfabriken,
           moderna badrum och bekvämligheter som gratis WiFi och TV.
         </p>
-        <p>
+        <p className="room-types-text">
           Vi erbjuder tre typer av boende, var och en noggrant utformad för att
           tillfredsställa olika behov och önskemål. Vårt{" "}
           <strong>Enkelrum</strong> är ett smakfullt alternativ för den som

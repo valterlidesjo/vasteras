@@ -16,6 +16,12 @@
   }
   @include m.desk {
     margin-top: 0;
+    h1 {
+      margin: 0 0 2rem 0;
+    }
+    .room-types-text {
+      margin-bottom: 2rem;
+    }
   }
 }
 
@@ -77,6 +83,7 @@
       @include m.flex(row, space-between, center);
       gap: 2rem;
       flex-wrap: wrap;
+
       .desktop-discount {
         font-size: v.$m;
         font-weight: 600;
