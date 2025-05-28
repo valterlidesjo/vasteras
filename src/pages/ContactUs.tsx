@@ -17,7 +17,7 @@ const ContactUs = () => {
             <AccordionTest header="Check in/check out">
               <p>
                 På Hotell Västerås gäller check-in från klockan 15.00 och
-                checkout sker klockan 12.00. (Mer info från maggan)
+                checkout sker klockan 12.00.
               </p>
             </AccordionTest>
             <AccordionTest header="Öppetider">
