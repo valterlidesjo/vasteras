@@ -16,18 +16,18 @@
   .homepage-article {
     width: 100%;
     @include m.flex(column);
-    padding: 0 1rem;
+
     h1 {
       font-size: v.$m;
       font-weight: 400;
-      padding: 2rem 0 1rem 0;
+      padding: 2rem 0;
       margin: 0;
     }
     h2 {
       font-size: v.$s;
       line-height: 1.2;
       font-weight: 400;
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
     }
     .homepage-room-btn,
     .homepage-stigen-btn {
@@ -38,10 +38,10 @@
       color: v.$black;
       text-decoration: none;
       padding: 0.7rem 1rem;
-      margin: 1rem 0 2rem 0;
+      margin: 0 0 2rem 0;
     }
     p {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       font-size: v.$s;
     }
 
@@ -112,7 +112,7 @@
         padding-bottom: 2rem;
       }
       .homepage-stigen-container {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
       }
     }
   }
