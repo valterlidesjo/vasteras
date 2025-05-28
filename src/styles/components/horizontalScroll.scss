@@ -7,8 +7,9 @@
   .image-container {
     position: relative;
     .hor-header {
-      font-size: v.$m;
+      font-size: v.$s;
       padding-bottom: 1rem;
+      font-weight: 600;
     }
     .read-more {
       font-size: v.$xs;
