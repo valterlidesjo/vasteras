@@ -89,8 +89,8 @@ const AboutUs = () => {
             vistelse i Västerås enkel och bekväm – tillsammans.
           </p>
           <p className="aboutus-text">
-            För bokningar med större sällskap kontakta oss via telefon eller
-            mail!{" "}
+            För bokningar med större sällskap kontakta oss via e-post eller
+            telefon!{" "}
           </p>
         </div>
         <CircularButton />
